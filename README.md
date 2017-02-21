@@ -21,8 +21,8 @@ pod 'WXImageCompress'
 end
 ```
 
-## 效果对比
-| 原图 | 微信 | 工具 |
+## Effect comparison
+| original | wechat | this |
 | --------   | -----   | ---- |
 | 1500 * 4000,  2.5MB | 800 * 2134, 325KB | 800 * 2134, 306KB |
 | 960 * 600,    210KB | 960 * 600, 147KB | 960 * 600, 147KB |
