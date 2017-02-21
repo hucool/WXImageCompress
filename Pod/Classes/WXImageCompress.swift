@@ -9,12 +9,12 @@
 import UIKit
 import Foundation
 
-enum WechatCompressType {
+public enum WechatCompressType {
     case session
     case timeline
 }
 
-extension UIImage {
+public extension UIImage {
     
     /**
      wechat image compress
