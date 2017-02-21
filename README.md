@@ -5,12 +5,10 @@
 
 
 ## Requirements
-
 * iOS 8.0+ | macOS 10.10+ | tvOS 9.0+ | watchOS 2.0+
 * Xcode 8
 
 ## Integration
-
 CocoaPods (iOS 8+, OS X 10.9+)
 ```
 platform :ios, '8.0'
@@ -20,6 +18,19 @@ target 'MyApp' do
 pod 'WXImageCompress'
 end
 ```
+
+
+## Usage
+```
+import WXImageCompress
+```
+```
+let image = UIImage(named: "imageName")!
+```
+```
+let thumbImage = image.wxCompress()
+```
+
 
 ## Effect comparison
 | original | wechat | this |
