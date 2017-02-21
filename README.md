@@ -10,7 +10,7 @@
 
 ## Integration
 CocoaPods (iOS 8+, OS X 10.9+)
-```
+```ruby
 platform :ios, '8.0'
 use_frameworks!
 
@@ -21,13 +21,13 @@ end
 
 
 ## Usage
-```
+```swift
 import WXImageCompress
 ```
-```
+```swift
 let image = UIImage(named: "imageName")!
 ```
-```
+```swift
 let thumbImage = image.wxCompress()
 ```
 
@@ -63,4 +63,6 @@ let thumbImage = image.wxCompress()
 ### 图片质量
 经过大量的测试，微信的图片压缩质量值 ≈0.5 
 
-`UIImageJPEGRepresentation(resizeImage, 0.5)!`
+```swift
+UIImageJPEGRepresentation(resizeImage, 0.5)!
+```
