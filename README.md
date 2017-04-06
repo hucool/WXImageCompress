@@ -3,7 +3,6 @@
 
 微信里面的图片压缩是一个很好的参照物，被大家广为使用并接受。这个扩展就是通过朋友圈和会话发送了大量图片，对比原图与微信压缩后的图片逆向推算出来的压缩算法。
 
-[objective-c](https://github.com/hucool/WCImageCompress)看这里
 ## Requirements
 * iOS 8.0+ | macOS 10.10+ | tvOS 9.0+ | watchOS 2.0+
 * Xcode 8
