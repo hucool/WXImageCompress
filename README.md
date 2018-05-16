@@ -10,12 +10,7 @@
 ## Integration
 CocoaPods (iOS 8+, OS X 10.9+)
 ```ruby
-platform :ios, '8.0'
-use_frameworks!
-
-target 'MyApp' do
 pod 'WXImageCompress', '~> 0.1.1'
-end
 ```
 
 
