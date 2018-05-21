@@ -23,11 +23,21 @@ public extension UIImage {
      
      - returns: thumb image
      */
-    func wxCompress(type: WechatCompressType = .timeline) -> UIImage {
-        let size = self.wxImageSize(type: type)
-        let reImage = resizedImage(size: size)
-        let data = UIImageJPEGRepresentation(reImage, 0.5)!
+    func wxCompressedImage(type: WechatCompressType = .timeline) -> UIImage {
+        let data: Data = wxCompressedJPEGRepresentation(type: type)
         return UIImage.init(data: data)!
+    }
+
+    func wxCompressedJPEGRepresentation(type: WechatCompressType = .timeline) -> Data {
+        let size = self.wxImageSize(type: type)
+        let reImage = self.resizedImage(size: size)
+        return UIImageJPEGRepresentation(reImage, 0.5)!
+    }
+
+    func wxCompressedPNGRepresentation(type: WechatCompressType = .timeline) -> Data {
+        let size = self.wxImageSize(type: type)
+        let reImage = self.resizedImage(size: size)
+        return UIImagePNGRepresentation(reImage)!
     }
     
     /**
