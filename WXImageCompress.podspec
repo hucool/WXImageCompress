@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WXImageCompress'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Image size quality compression, very close to WeChat picture compression strategy'
   s.homepage         = 'https://github.com/hucool/WXImageCompress'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
